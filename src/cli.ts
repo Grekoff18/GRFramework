@@ -1,4 +1,19 @@
 #!/usr/bin/env node
-import { foo } from './main'
+import { GRInstance, GRTree } from "./main";
 
-foo()
+new GRInstance({
+  propData: {
+    parent: "1",
+  },
+  children: [],
+  tag: "p",
+});
+new GRInstance({
+  propData: {
+    parent: "2",
+  },
+  children: [],
+  tag: "div",
+});
+
+console.log("grtree", GRTree.treeStore);
