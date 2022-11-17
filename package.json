@@ -1,5 +1,5 @@
 {
-  "name": "gr",
+  "name": "gr-framework",
   "version": "0.0.1",
   "description": "GetReadyFramework | Simple frontend framework",
   "author": "Nick Grekoff <kolagrekalo@gmail.com>",
@@ -9,9 +9,8 @@
     "frontend",
     "framework"
   ],
-  "main": "./dist/tsc/main.js",
-  "types": "./dist/tsc/main.d.ts",
-  "browser": "./dist/esbuild/browser.js",
+  "main": "./dist/tsc/src/main.js",
+  "types": "./dist/tsc/src/main.d.ts",
   "bin": {
     "my-cli-tool": "./dist/esbuild/cli.js"
   },

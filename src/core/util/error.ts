@@ -1,4 +1,13 @@
+import { inBrowser } from "../../../config";
+
 export default function error(msg: string): Error {
-  console.error(msg)
-  throw new Error(msg)
+  if (msg) {
+    console.error(msg);
+  }
+
+  if (inBrowser) {
+    throw new Error(msg);
+  } else {
+    process.exit(1);
+  }
 }

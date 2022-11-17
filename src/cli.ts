@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { GRInstance, GRTree } from "./main";
+import { GRInstance, GRTree, GRBuilder } from "./main";
 
 new GRInstance({
   propData: {
@@ -8,12 +8,14 @@ new GRInstance({
   children: [],
   tag: "p",
 });
-new GRInstance({
+const component = new GRInstance({
   propData: {
     parent: "2",
   },
   children: [],
   tag: "div",
 });
+
+new GRBuilder(".app", component);
 
 console.log("grtree", GRTree.treeStore);
