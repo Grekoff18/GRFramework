@@ -9,8 +9,11 @@
     "frontend",
     "framework"
   ],
-  "main": "./dist/tsc/src/main.js",
-  "types": "./dist/tsc/src/main.d.ts",
+  "main": "./dist/tsc/src/index.js",
+  "types": "./dist/tsc/src/index.d.ts",
+  "files": [
+    "/dist/tsc/src"
+  ],
   "bin": {
     "my-cli-tool": "./dist/esbuild/cli.js"
   },

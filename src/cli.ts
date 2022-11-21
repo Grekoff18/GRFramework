@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { GRInstance, GRTree, GRBuilder } from "./main";
+import { GRInstance, GRTree, GRBuilder } from "./index";
 
 new GRInstance({
   propData: {
