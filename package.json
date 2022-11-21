@@ -14,9 +14,6 @@
   "files": [
     "/dist/tsc/src"
   ],
-  "bin": {
-    "my-cli-tool": "./dist/esbuild/cli.js"
-  },
   "scripts": {
     "dev": "nodemon --watch src src/cli.ts",
     "cli": "ts-node src/cli.ts",
